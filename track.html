@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>The Race</title>
+    <link rel="stylesheet" type="text/css" href="main.css" />
+  </head>
+  <body id="body">
+    <div class="box">
+      <div class="row topbar">
+        <div class="left">
+          <!-- add race buttons here -->
+        </div>
+        <div class="right">
+          <span class="title">The Race</span>
+
+          <button
+            class="addCarButton"
+            data-car-maker-function-name="Pickup">
+            Add Pickup
+          </button>
+
+          <button
+            class="addCarButton"
+            data-car-maker-function-name="Viper">
+            Add Viper
+          </button>
+
+
+          <button
+            class="addCarButton"
+            data-car-maker-function-name="Audi">
+            Add Audi</button>
+
+          <button
+            class="addCarButton"
+            data-car-maker-function-name="Mustang">
+            Add Mustang
+          </button>
+
+          <div class="racePrep">
+          <button
+            class="RaceButton"
+            id="getReadyButton"
+            data-car-maker-function-name="Mustang">
+            Get Ready for Race
+          </button>
+
+          <button
+            class="RaceButton"
+            id="startRaceButton"
+            data-car-maker-function-name="Mustang">
+            START
+          </button>
+          </div>
+        </div>
+      </div>
+      <div id="content" class="row content">
+<div id="content" class="row content">
+<div id="startLine" class="start-line" aria-label="Start Line"></div>
+</div>
+</div>
+    </div>
+    
+    <div id="infoPanel" class="info-panel"></div>
+
+    <script src="src/car.js"></script>
+    <script src="src/audi.js"></script>
+    <script src="src/mustang.js"></script>
+    <script src="src/viper.js"></script>
+    <script src="src/pickup.js"></script>
+
+
+    <script src="src/init.js"></script>
+  </body>
+</html>
