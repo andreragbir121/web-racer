@@ -34,8 +34,9 @@ document.addEventListener("DOMContentLoaded", function() {
   })));
 
 
+
+  
 // Write code here so that when the get ready button is clicked display a finish line and have all the cars arrange themselves in a line to the left of the screen.  The lining up is done by making sure every car has the same horiontal(x/left) positioning
-// Level 4 — Get Ready
 const getReadyButton = document.getElementById('getReadyButton');
 
 getReadyButton.addEventListener('click', () => {
@@ -51,7 +52,6 @@ getReadyButton.addEventListener('click', () => {
 
 });
 
-
 // Write code here so that when the start race button is clicked the cars should start 'moving' across the screen towards the finish line.  This is done by updating each car's horizontal/left/x position so that they move/take steps repeatedly until they reach the finish line.
 startRaceButton(document.getElementById('startRaceButton'));
 function startRaceButton(startRaceButton) {
@@ -66,8 +66,22 @@ function startRaceButton(startRaceButton) {
         } else {
           car.setPosition(car.top, car.left + Math.random() * 10); // Move car forward by a random amount
         }
-      }, this.timeBetweenSteps);
+      }, 20);
     });
   });     
 }
+});
+
+document.addEventListener('contextmenu', (element) => {
+
+  // Check if the clicked element is a car
+  if (element.target.classList.contains('car')) {
+    element.preventDefault(); 
+
+    // Remove the car from the page
+    element.target.remove();
+
+    // Remove the car
+    window.cars = window.cars.filter(car => car.carBody !== element.target);
+  }
 });

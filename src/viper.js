@@ -1,8 +1,7 @@
 var Viper = function(top, left, timeBetweenSteps){
   Car.call(this,top, left, timeBetweenSteps); // use the Car constructor to initialize the 'inherited' properties.
-  // add a new class to the object so that we can target it in our CSS and JS
+
     this.carBody.classList.add('Viper');
-    this.name = 'Viper';
     this.carBody.setAttribute('title',`${this.carBody.classList[1]}`); 
 };
 

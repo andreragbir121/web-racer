@@ -1,8 +1,8 @@
 var Audi = function(top, left, timeBetweenSteps){
   Car.call(this,top, left, timeBetweenSteps); // use the Car constructor to initialize the 'inherited' properties.
-  // add a new class to the object so that we can target it in our CSS and JS
-    this.carBody.classList.add('Audi');
-    this.carBody.setAttribute('title',`${this.carBody.classList[1]}`); 
+
+  this.carBody.classList.add('Audi');
+  this.carBody.setAttribute('title',`${this.carBody.classList[1]}`); 
 };
 
 // link the audi object to the prototype chain of the Animal object so that we have an inheritance relationship.  The audi will be able to use the functions defined in Animal after this.
@@ -23,15 +23,4 @@ Audi.prototype.step = function(){
   //   this.carBody.style.display = "none";
   // }
 };
-
-
-
-
-
-
-
-
-
-
-
 

@@ -50,14 +50,9 @@ body, a:link, a:visited, a:active{
   border-radius: 8px;
 
 }
-
 .content{
   clear:both;
   flex: 1 1 auto;
-}
-.title{
-  background-color: rgba(0,0,0,0.8);
-  text-decoration: none;
 }
 
 .car {
@@ -67,7 +62,13 @@ body, a:link, a:visited, a:active{
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  cursor: pointer; 
 }
+
+.car:hover {
+  transform: scale(1.3);
+}
+
 
 .Audi {
   background-image: url("img/Topdown_vehicle_sprites_pack/Audi.png");
@@ -85,38 +86,4 @@ body, a:link, a:visited, a:active{
   background-image: url("img/Topdown_vehicle_sprites_pack/pickup.png");
 }
 
-/* 7A: info panel styling */
-.info-panel {
-  position: absolute;
-  display: none;          /* controlled via .visible class */
-  z-index: 9999;
-  padding: 8px 10px;
-  border-radius: 6px;
-  background: #222;
-  color: #fff;
-  box-shadow: 0 4px 10px rgba(0,0,0,.25);
-  font: 12px/1.3 system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-}
 
-.info-panel.visible {
-  display: block;
-}
-
-.info-panel .info-title {
-  font-weight: 600;
-  margin-bottom: 4px;
-}
-
-.info-panel .info-row {
-  opacity: 0.9;
-}
-
-.car {
-  transition: transform 150ms ease, box-shadow 150ms ease;
-  transform-origin: center center;
-}
-
-.car:hover {
-  transform: scale(1.35);
-  z-index: 5; 
-}
