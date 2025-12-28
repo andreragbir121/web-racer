@@ -14,8 +14,8 @@ Pickup.prototype.constructor = Pickup;
 
 // when the audi's step function fires, toggle between display and hidden to simulate the animal moving... sort-of
 Pickup.prototype.step = function(){
-  Car.prototype.step.call(this);// call the Car step function on this audi object
-  //  ;
+  Car.prototype.step.call(this);
+  // call the Car step function on this audi object
 
   // toggle the body's display on each step to simulate movement
   // if (this.carBody.style.display === "none") {    

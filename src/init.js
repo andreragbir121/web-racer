@@ -44,7 +44,6 @@ getReadyButton.addEventListener('click', () => {
   const leftMargin = 10;
   const topStart   = 20;
 
-  // Lane height: use first car's height (fallback 60) + small gap
   const laneHeight = ((window.cars[0].carBody.offsetHeight || 60) + 12);
 
   // Line up: same left, increasing top
@@ -74,7 +73,6 @@ function startRaceButton(startRaceButton) {
 
 document.addEventListener('contextmenu', (element) => {
 
-  // Check if the clicked element is a car
   if (element.target.classList.contains('car')) {
     element.preventDefault(); 
 
