@@ -65,6 +65,33 @@ body, a:link, a:visited, a:active{
   cursor: pointer; 
 }
 
+.RaceButton{
+  padding:15px 12px;
+  float:right;
+  text-decoration-style:none;
+  margin-top: 20px;
+  margin-left: 4px;
+}
+
+.getReady{
+  background-color: orange; 
+  border: none;
+  color: black;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.startRace{
+  background-color: green; 
+  border: none;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
 .car:hover {
   transform: scale(1.3);
 }
